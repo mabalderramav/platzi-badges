@@ -8,9 +8,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const element = <h1>Hello, Platzi Badges!</h1>;
+const name = "Aldo";
+const jsx = (
+  <div>
+    <h1>Hello, soy {name}</h1>
+    <p>Soy ingeniero frontend.</p>
+  </div>
+);
+// const element = React.createElement("h1", {}, "Hola! Soy los children.");
 
 const container = document.getElementById("app");
-
 // ReactDOM.render(__qué__, __dónde__);
-ReactDOM.render(element, container);
+ReactDOM.render(jsx, container);
